@@ -3,36 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>To Do List</title>
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/scss/styles.css">
 </head>
 <body>
-	<div id="app">
-		<form id='add-form'>
-			<input id="create" name="itemDescription" type="text" placeholder="Add something to the list!">
-		</form>
-		<ul id='list'>
-			<li class='item' data-id="1">
-				<span class='complete-button'>&#10004;</span>
-				<div class="description">A gallon of milk</div>
-				<span class="delete-button">&#10008;</span>
-			</li>
-			<li class='item completed' data-id="2">
-				<span class='complete-button'>&#10004;</span>
-				<div class="description">A stick of butter</div>
-				<span class="delete-button">&#10008;</span>
-			</li>
-		</ul>
-	</div>
+	<div id="myDIV" class="header">
+		<h2>My To Do List</h2>
+		<input type="text" id="myInput" placeholder="Title...">
+		<span onclick="newElement()" class="addBtn">Add a Task</span>
 	</div>
 	
-	<ul id='templates'>
-		<li class='item' data-id="some id">
-			<span class='complete-button'>&#10004;</span>
-			<div class="description">A stick of butter</div>
-			<span class="delete-button">&#10008;</span>
-		</li>
-	</ul>
+	<ul id="myUL">
+		<li>Go to gym</li>
+		<li class="checked">Pay bills</li>
+		<li>Meet teacher</li>
+		<li>Buy eggs</li>
+		<li>Read a book</li>
+		<li>Organize office</li>
+	</ul></div>
+	<div id="myDIV2" class="dropdown">
+		<h3>Filters</h3>
+			<button class="dropbtn">Apply Filter</button>
+			<div class="dropdown-content">
+				<li class="checked">See Completed</li>
+				<li class="checked">See To do</li>
+				<li class="checked">See All</li>
+			</div>
+		</div>
+	</div>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
