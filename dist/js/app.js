@@ -1,0 +1,1 @@
+var itemTemplate=$("#templates .item"),list=$("#list"),addItemToPage=function(t){var e=itemTemplate.clone();e.attr("data-id",t.id),e.find(".description").text(t.description),t.completed&&e.addClass("completed"),list.append(e)};

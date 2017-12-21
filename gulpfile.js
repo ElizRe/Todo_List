@@ -41,10 +41,10 @@ gulp.task("browser-sync",function () {
  });
 });
 
-gulp.task("gulpwatch",['styleone','scriptjs','sass','uglify'],function () {
-        gulp.watch("./assets/scss/*.scss",["sass"]).on("change", browserSync.reload)
-        gulp.watch("./assets/js/*.js",["uglify"]).on("change", browserSync.reload)
-        gulp.watch("./*.html", ).on("change", browserSync.reload)
+gulp.task("gulpwatch",['styleone','scriptjs','sass','uglify','browser-sync'],function () {
+        gulp.watch("./assets/scss/*.scss",["sass"]).on("change", browserSync.reload);
+        gulp.watch("./assets/js/*.js",["uglify"]).on("change", browserSync.reload);
+        gulp.watch("./*.html", ).on("change", browserSync.reload);
 
     });
 
