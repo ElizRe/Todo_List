@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>To Do List</title>
 	<link rel="stylesheet" type="text/css" href="assets/scss/styles.css">
 </head>
+
 <body>
 	<div id="myDIV" class="header">
 		<h2>My To Do List</h2>
@@ -18,18 +20,23 @@
 		<li>Buy eggs</li>
 		<li>Read a book</li>
 		<li>Organize office</li>
-	</ul></div>
-	<div id="myDIV2" class="dropdown">
-		<h3>Filters</h3>
-		<button class="dropbtn">Apply Filter</button>
-		<div class="dropdown-content">
-			<li class="checked">See Completed</li>
-			<li class="checked">See To do</li>
-			<li class="checked">See All</li>
-		</div>
-		</div>
+	</ul>
+	</div>
+	<div id="myDIV2" class="filter">
+		<h2>Filter</h2>
+		<form method="post">
+			<select name="Filter">
+				<option value="complete">Completed</option>
+				<option value="notdone">Uncompleted</option>
+				<option value="show">Show All</option>
+			</select>
+		</form>
+	</div>
+	</div>
+	</div>
 	</div>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
+
 </html>
