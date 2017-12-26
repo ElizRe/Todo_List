@@ -56,7 +56,10 @@ function newElement() {
     }
   }
 } 
-//my test to use localstorage
-var li = JSON(localStorage.getItem("myUL"));
-localStorage.setItem("li", JSON.stringify(li));
-console.log(JSON.parse( localstorage.getitem('li')));
+//my test to use localstorage which does not work!
+function saveContents() {
+
+  var listOfThingsToDo = document.getElementById('myUL').innerHTML;
+  localStorage["myToDoList"] = listOfThingsToDo;
+  
+  }
