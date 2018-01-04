@@ -10,9 +10,19 @@
 <body>
 	<div id="myDIV" class="header">
 		<h2>My To Do List</h2>
-		<input type="text" id="myInput" placeholder="Title...">
+		<input type="text" id="myInput" placeholder="Text...">
 		<span onclick="newElement()" class="addBtn">Add a Task</span>
 	</div>
+		<div id="myDIV2" class="filter">
+			<h2>Filter</h2>
+			<form method="post">
+				<select name="Filter">
+					<option value="complete">Completed</option>
+					<option value="notdone">Uncompleted</option>
+					<option value="show">Show All</option>
+				</select>
+			</form>
+		</div>
 	<ul id="myUL">
 		<li>Go to gym</li>
 		<li class="checked">Pay bills</li>
@@ -21,20 +31,7 @@
 		<li>Read a book</li>
 		<li>Organize office</li>
 	</ul>
-	</div>
-	<div id="myDIV2" class="filter">
-		<h2>Filter</h2>
-		<form method="post">
-			<select name="Filter">
-				<option value="complete">Completed</option>
-				<option value="notdone">Uncompleted</option>
-				<option value="show">Show All</option>
-			</select>
-		</form>
-	</div>
-	</div>
-	</div>
-	</div>
+
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>

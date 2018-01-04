@@ -19,7 +19,7 @@ ul li {
     font-size: 18px;
     font-family: Open sans-serif;
     transition: 0.2s;
-    width: 70%;
+    width: 50%;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -79,7 +79,7 @@ ul li.checked::before {
     color: white;
     text-align: center;
     height: 200px;
-    width: 70%;
+    width: 50%;
 }
 
 /* Clear floats after the header */
@@ -115,7 +115,9 @@ input {
     background-color: #bbb;
 }
 .filter {
-display: inline-block;
 border-style: solid;
 border-width: 1px;
+float: right;
+height: 100px;
+width: 500px;
 }

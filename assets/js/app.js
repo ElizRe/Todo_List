@@ -56,10 +56,19 @@ function newElement() {
     }
   }
 } 
-//my test to use localstorage which does not work!
+
+//second test for local storage
 function saveContents() {
 
-  var listOfThingsToDo = document.getElementById('myUL').innerHTML;
+  var listOfThingsToDo = document.getElementById("myUL").innerHTML;
   localStorage["myToDoList"] = listOfThingsToDo;
-  
+}
+
+function restoreContents() {
+  var mySavedList = localStorage["myToDoList"];
+
+  if (mySavedList != undefined) {
+    document.getElementById("myUL").innerHTML = mySavedList;
+    console.log("myUl");
   }
+}
